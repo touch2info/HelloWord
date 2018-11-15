@@ -1,3 +1,12 @@
 package com.touch2info;
 
-cat class
+
+public class Cat{
+	
+	public void cat() {
+		System.out.println("Really this sysout");
+	}
+	
+	
+}
+
