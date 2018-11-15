@@ -3,7 +3,7 @@ package com.touch2info;
 public class AnimalStartProject {
 
 	
-	//IMP: Can't write Sys out direclty in class. It has to go in metho. 
+	//IMP: Can't write Sys out directly in class. It has to go in method. 
 	//System.out.println("test before main"); 
 	
 	private int i;
@@ -17,6 +17,7 @@ public class AnimalStartProject {
 		System.out.println("firstName BEFORE calling set method:"+animalStartProject.getFirstName());
 		animalStartProject.setFirstName("New first name");
 		System.out.println("firstName AFTER calling set method:"+animalStartProject.getFirstName());
+		System.out.println("Now checking in ashish branch...");
 	}
 
 	public int getI() {
