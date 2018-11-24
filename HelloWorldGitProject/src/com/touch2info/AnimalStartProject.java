@@ -16,16 +16,23 @@ public class AnimalStartProject {
 		
 		//local variable 
 		int i = 10;
-		AnimalStartProject animalStartProject = new AnimalStartProject();
-		System.out.println("firstName BEFORE calling set method:"+animalStartProject.getFirstName());
-		animalStartProject.setFirstName("New first name");
-		System.out.println("firstName AFTER calling set method:"+animalStartProject.getFirstName());
+		AnimalStartProject animalStartProject111 = new AnimalStartProject();
+		//animalStartProject111.setFirstName("anshul111");
+		System.out.println("firstName BEFORE calling set method:"+animalStartProject111.getFirstName());
+		animalStartProject111.setFirstName("New first name");
+		System.out.println("firstName AFTER calling set method:"+animalStartProject111.getFirstName());
 		System.out.println("Now checking in ashish branch...");
 		System.out.println("Doing one more PR for ashish branch..");
 		System.out.println("Checking from Anshul mac.. some other changes");
 		System.out.println("New changes to add to git branch by anshul");
 		System.out.println("i:"+ i);
-		System.out.println("Set i value from set i method:" + animalStartProject.getI());
+		System.out.println("Set i value from set i method:" + animalStartProject111.getI());
+		
+		AnimalStartProject animalStartProject222 = new AnimalStartProject();
+		System.out.println("first name "+animalStartProject222.getFirstName());
+		animalStartProject222.setFirstName("anshul222");
+		System.out.println("New object name:" + animalStartProject222.getFirstName());
+		
 		
 		//if else example
 		
@@ -73,7 +80,9 @@ public class AnimalStartProject {
 		  
 		//Code of Java for simple for loop 
 		//The syntax is (initialization, condition, inc/decr)
-		    for(int x=1;x<=5;x++){  
+		    
+		  
+		  for(int x=1;x<=5;x++){  
 		        System.out.println(x);  
 		    }
 		      
@@ -87,26 +96,9 @@ public class AnimalStartProject {
 		    }
 		    
 		    System.out.println("\n\n");
-		    
-		 /*Confusing... So the first for loop executes with i1=1 and the second one with j=1
-		  * It continues on to println (output is 1 1) because 'break aa' is only executed when i1 and j = 2
-		  * What's key is that the first for loop executes as i1=1 but then the second loop keeps executing
-		  * through its sequence as j=1, j=2, j=3 until it hits 4 and that's when the condition is false
-		  * so it goes back to the first loop where i1=2 now and then j=1 and continues on the j=2
-		  * BUT now i1 and j are both =2 which executes the break aa code and then stops the first loop 
-		  * therefore stopping the second nest loop as well
-		  * Question: Where exactly does the second loop go once the condition is false? - how does it know to go back to first loop
-		  */
-		    aa:  
-		        for(int i1=1;i1<=3;i1++){  
-		            bb:  
-		                for(int j=1;j<=3;j++){  
-		                    if(i1==2&&j==2){  
-		                        break aa;  
-		                    }  
-		                    System.out.println(i1+" "+j);
-		                }  
-		        }  
+		  
+		  //calling method example  
+		 animalStartProject111.forLoopExample();
 		    
 		    System.out.println("\n\n");
 		    
@@ -144,11 +136,32 @@ public class AnimalStartProject {
 		return firstName;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFirstName(String fName) {
+		this.firstName = fName;
 	}
 	
-	
+	public void forLoopExample () {
+		/*Confusing... So the first for loop executes with i1=1 and the second one with j=1
+		  * It continues on to println (output is 1 1) because 'break aa' is only executed when i1 and j = 2
+		  * What's key is that the first for loop executes as i1=1 but then the second loop keeps executing
+		  * through its sequence as j=1, j=2, j=3 until it hits 4 and that's when the condition is false
+		  * so it goes back to the first loop where i1=2 now and then j=1 and continues on the j=2
+		  * BUT now i1 and j are both =2 which executes the break aa code and then stops the first loop 
+		  * therefore stopping the second nest loop as well
+		  * Question: Where exactly does the second loop go once the condition is false? - how does it know to go back to first loop
+		  */
+		    aa:  
+		        for(int i1=1;i1<=3;i1++){  
+		            bb:  
+		                for(int j=1;j<=3;j++){  
+		                    if(i1==2&&j==2){  
+		                        break aa;  
+		                    }  
+		                    System.out.println(i1+" "+j);
+		                }  
+		        }  
+		    
+	}
 
 	
 }

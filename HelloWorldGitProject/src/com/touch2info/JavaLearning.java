@@ -43,6 +43,10 @@ public class JavaLearning {
 		
 	    }
 		
+	    System.out.println("\n");
+	    
+	  //using continue in a inner for loop
+	  //You can use continue for while and do-while loops too
 	  //outer loop  
         for(int m=1;m<=3;m++){    
                 //inner loop  
@@ -53,11 +57,13 @@ public class JavaLearning {
                     }    
                     System.out.println(m+" "+n);    
                 }    
-        }    
+                
+        }
+        
+        //What is the difference between runtime and compile?
 		
-		
-		
-		
+    
+        
 		
 	}
 
